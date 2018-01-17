@@ -25,9 +25,9 @@ https://gumroad.com/l/uPXbQ <br />
 (InfinityBladeEffects) <br />
 downloadable from the marketplace
 
-------
+# how to do some tests
 
-to do some tests start use the .bat files "startClient" and "startServer". <br />
+to do some tests use the .bat files "startClient" and "startServer". <br />
 (you just have to update the bat files with the correct path of your Unreal Engine installation then it will work properly)
 
 ------
