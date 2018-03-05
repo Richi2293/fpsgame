@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{2C4AB670-4ECA-FDFD-32A9-A68626EBB217}",
+	"EngineAssociation": "{EE17CA7D-4437-1811-0C29-8D94ED9687FA}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -15,6 +15,10 @@
 			"Name": "Substance",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
+		},
+		{
+			"Name": "AdvancedSessions",
+			"Enabled": true
 		}
 	]
 }
