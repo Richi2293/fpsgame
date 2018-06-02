@@ -1,12 +1,12 @@
-# fpsgame
-open source fps game developed with Unreal Engine (version 4.17.1 source build, only blueprints) <br />
+# Fpsgame
+open source fps game developed with Unreal Engine (I am currently using the version 4.18 source build, only blueprints) <br />
 anyone who wants to improve the project is well accepted. <br />
 
-# tasks
+# Tasks (at the moment I'm not using it a lot)
 https://trello.com/b/XSXJhT2e/fps-game
 
 ------
-# download content separately (need to work)
+# Download content separately (need to work)
 (StarterContent) <br />
 The repository lacks the "StarterContent" folder in the / Content / StarterContent path
 
@@ -25,10 +25,16 @@ https://gumroad.com/l/uPXbQ <br />
 (InfinityBladeEffects) <br />
 downloadable from the marketplace
 
-# how to do some tests
+------
 
-to do some tests use the .bat files "startClient" and "startServer". <br />
-(you just have to update the bat files with the correct path of your Unreal Engine installation then it will work properly)
+# How to do some tests
+
+To do some tests use the .bat files: <br/>
+- "startMainServer.bat" start the main server. <br />
+- "startServerMap1.bat" start the map (only 1 map at moment) <br />
+- "startClient.bat" start the client <br />
+- "StartDefaultTest-2Players.bat" start two servers and two players. <br />
+(to make these batch files work you have to update the bat files with the correct path of your Unreal Engine installation then it will works) <br/>
 
 ------
 
