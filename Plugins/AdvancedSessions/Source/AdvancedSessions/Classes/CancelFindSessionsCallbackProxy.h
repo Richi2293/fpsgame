@@ -1,7 +1,8 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
 #pragma once
 #include "CoreMinimal.h"
-#include "OnlineSessionInterface.h"
+#include "Engine/Engine.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "BlueprintDataDefinitions.h"
 #include "CancelFindSessionsCallbackProxy.generated.h"
 

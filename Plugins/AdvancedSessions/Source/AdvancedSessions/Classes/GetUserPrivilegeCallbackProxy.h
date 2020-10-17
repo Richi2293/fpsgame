@@ -3,7 +3,7 @@
 
 #include "CoreMinimal.h"
 #include "BlueprintDataDefinitions.h"
-#include "OnlineIdentityInterface.h"
+#include "Interfaces/OnlineIdentityInterface.h"
 #include "GetUserPrivilegeCallbackProxy.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FBlueprintGetUserPrivilegeDelegate,/* const &FBPUniqueNetId, PlayerID,*/ EBPUserPrivileges, QueriedPrivilege, bool, HadPrivilege);
@@ -21,7 +21,7 @@ class UGetUserPrivilegeCallbackProxy : public UOnlineBlueprintCallProxyBase
 	UPROPERTY(BlueprintAssignable)
 	FEmptyOnlineDelegate OnFailure;
 
-	// Logs out of the identity interface
+	// Gets the privilage of the user
 	UFUNCTION(BlueprintCallable, meta=(BlueprintInternalUseOnly = "true", WorldContext="WorldContextObject"), Category = "Online|AdvancedIdentity")
 	static UGetUserPrivilegeCallbackProxy* GetUserPrivilege(UObject* WorldContextObject, const EBPUserPrivileges & PrivilegeToCheck, const FBPUniqueNetId & PlayerUniqueNetID);
 

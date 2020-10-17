@@ -1,17 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EngineMinimal.h"
+//#include "EngineMinimal.h"
 #include "Engine/Engine.h"
 #include "GameFramework/PlayerState.h"
-#include "Core.h"
-#include "OnlineSessionInterface.h"
+//#include "Core.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "OnlineSessionSettings.h"
 #include "OnlineDelegateMacros.h"
 #include "OnlineSubsystem.h"
 #include "OnlineSubsystemImpl.h"
 #include "OnlineSubsystemUtils.h"
 #include "OnlineSubsystemUtilsModule.h"
-#include "ModuleManager.h"
+#include "GameFramework/PlayerController.h"
+#include "Modules/ModuleManager.h"
 #include "OnlineSubsystemUtilsClasses.h"
 #include "BlueprintDataDefinitions.generated.h"	
 
@@ -339,7 +340,7 @@ public:
 		//return const_cast<FUniqueNetId*>(UniqueNetIdPtr);
 		if (APlayerState* PlayerState = (PlayerController != NULL) ? PlayerController->PlayerState : NULL)
 		{
-			UserID = PlayerState->UniqueId.GetUniqueNetId();
+			UserID = PlayerState->GetUniqueId().GetUniqueNetId();
 			if (!UserID.IsValid())
 			{
 				FFrame::KismetExecutionMessage(*FString::Printf(TEXT("%s - Cannot map local player to unique net ID"), FunctionContext), ELogVerbosity::Warning);

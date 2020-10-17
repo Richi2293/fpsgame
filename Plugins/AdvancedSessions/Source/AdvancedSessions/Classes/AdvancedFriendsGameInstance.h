@@ -2,19 +2,20 @@
 
 #pragma once
 #include "CoreMinimal.h"
+#include "Engine/Engine.h"
 #include "BlueprintDataDefinitions.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Online.h"
 #include "OnlineSubsystem.h"
-#include "OnlineFriendsInterface.h"
-#include "OnlineUserInterface.h"
-#include "OnlineMessageInterface.h"
-#include "OnlinePresenceInterface.h"
+#include "Interfaces/OnlineFriendsInterface.h"
+#include "Interfaces/OnlineUserInterface.h"
+#include "Interfaces/OnlineMessageInterface.h"
+#include "Interfaces/OnlinePresenceInterface.h"
 #include "Engine/GameInstance.h"
 #include "Engine/LocalPlayer.h"
-#include "OnlineSessionInterface.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "OnlineSessionSettings.h"
-#include "UObjectIterator.h"
+#include "UObject/UObjectIterator.h"
 #include "AdvancedFriendsInterface.h"
 
 #include "AdvancedFriendsGameInstance.generated.h"
@@ -65,6 +66,7 @@ public:
 	void OnSessionInviteAcceptedMaster(const bool bWasSuccessful, int32 LocalPlayer, TSharedPtr<const FUniqueNetId> PersonInviting, const FOnlineSessionSearchResult& SessionToJoin);
 
 	// After a session invite has been accepted by the local player this event is triggered, call JoinSession on the session result to join it
+	// This function is currently not hooked up in any of Epics default subsystems, it is here for custom subsystems
 	UFUNCTION(BlueprintImplementableEvent, Category = "AdvancedFriends")
 	void OnSessionInviteAccepted(int32 LocalPlayerNum, FBPUniqueNetId PersonInvited, const FBlueprintSessionResult& SessionToJoin);
 

@@ -6,7 +6,7 @@
 #include "BlueprintDataDefinitions.h"
 #include "Online.h"
 #include "OnlineSubsystem.h"
-#include "VoiceInterface.h"
+#include "Interfaces/VoiceInterface.h"
 //#include "OnlineFriendsInterface.h"
 //#include "OnlineUserInterface.h"
 //#include "OnlineMessageInterface.h"
@@ -14,7 +14,7 @@
 #include "Engine/GameInstance.h"
 //#include "OnlineSessionInterface.h"
 
-#include "UObjectIterator.h"
+#include "UObject/UObjectIterator.h"
 
 #include "AdvancedVoiceLibrary.generated.h"
 
@@ -48,6 +48,7 @@ public:
 	static bool RegisterLocalTalker(uint8 LocalPlayerNum = 0);
 
 	// Registers all signed in players as local talkers
+	// This is already done automatically, only do it manually if you unregistered someone
 	UFUNCTION(BlueprintCallable, Category = "Online|AdvancedVoice")
 	static void RegisterAllLocalTalkers();
 
@@ -60,6 +61,7 @@ public:
 	static void UnRegisterAllLocalTalkers();
 
 	// Registers a remote player as a talker
+	// This is already done automatically, only do it manually if you unregistered someone
 	UFUNCTION(BlueprintCallable, Category = "Online|AdvancedVoice")
 	static bool RegisterRemoteTalker(const FBPUniqueNetId& UniqueNetId);
 

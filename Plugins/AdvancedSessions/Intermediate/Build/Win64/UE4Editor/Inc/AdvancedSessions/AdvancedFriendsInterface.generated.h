@@ -1,11 +1,11 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 enum class EBPLoginStatus : uint8;
@@ -16,6 +16,7 @@ struct FBlueprintSessionResult;
 #endif
 #define ADVANCEDSESSIONS_AdvancedFriendsInterface_generated_h
 
+#define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_SPARSE_DATA
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_RPC_WRAPPERS
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_RPC_WRAPPERS_NO_PURE_DECLS
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_EVENT_PARMS \
@@ -76,11 +77,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAdvancedFriendsInterface); \
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUAdvancedFriendsInterface(); \
-	friend ADVANCEDSESSIONS_API class UClass* Z_Construct_UClass_UAdvancedFriendsInterface(); \
+	friend struct Z_Construct_UClass_UAdvancedFriendsInterface_Statics; \
 public: \
-	DECLARE_CLASS(UAdvancedFriendsInterface, UInterface, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Interface), 0, TEXT("/Script/AdvancedSessions"), ADVANCEDSESSIONS_API) \
-	DECLARE_SERIALIZER(UAdvancedFriendsInterface) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UAdvancedFriendsInterface, UInterface, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Interface), CASTCLASS_None, TEXT("/Script/AdvancedSessions"), ADVANCEDSESSIONS_API) \
+	DECLARE_SERIALIZER(UAdvancedFriendsInterface)
 
 
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_GENERATED_BODY_LEGACY \
@@ -103,6 +103,7 @@ protected: \
 	virtual ~IAdvancedFriendsInterface() {} \
 public: \
 	typedef UAdvancedFriendsInterface UClassType; \
+	typedef IAdvancedFriendsInterface ThisClass; \
 	static void Execute_OnPlayerLoginChanged(UObject* O, int32 PlayerNum); \
 	static void Execute_OnPlayerLoginStatusChanged(UObject* O, EBPLoginStatus PreviousStatus, EBPLoginStatus NewStatus, FBPUniqueNetId PlayerUniqueNetID); \
 	static void Execute_OnPlayerVoiceStateChanged(UObject* O, FBPUniqueNetId PlayerId, bool bIsTalking); \
@@ -116,6 +117,7 @@ protected: \
 	virtual ~IAdvancedFriendsInterface() {} \
 public: \
 	typedef UAdvancedFriendsInterface UClassType; \
+	typedef IAdvancedFriendsInterface ThisClass; \
 	static void Execute_OnPlayerLoginChanged(UObject* O, int32 PlayerNum); \
 	static void Execute_OnPlayerLoginStatusChanged(UObject* O, EBPLoginStatus PreviousStatus, EBPLoginStatus NewStatus, FBPUniqueNetId PlayerUniqueNetID); \
 	static void Execute_OnPlayerVoiceStateChanged(UObject* O, FBPUniqueNetId PlayerId, bool bIsTalking); \
@@ -131,6 +133,7 @@ public: \
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_SPARSE_DATA \
 	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_RPC_WRAPPERS \
 	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_CALLBACK_WRAPPERS \
 	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_INCLASS_IINTERFACE \
@@ -141,12 +144,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_SPARSE_DATA \
 	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_CALLBACK_WRAPPERS \
 	fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h_23_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> ADVANCEDSESSIONS_API UClass* StaticClass<class UAdvancedFriendsInterface>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID fpsgame_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsInterface_h

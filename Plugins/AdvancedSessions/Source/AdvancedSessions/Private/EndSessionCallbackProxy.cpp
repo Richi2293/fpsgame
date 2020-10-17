@@ -1,5 +1,4 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
-
 #include "EndSessionCallbackProxy.h"
 
 
@@ -30,12 +29,12 @@ void UEndSessionCallbackProxy::Activate()
 		auto Sessions = Helper.OnlineSub->GetSessionInterface();
 		if (Sessions.IsValid())
 		{
-			FNamedOnlineSession* Session = Sessions->GetNamedSession(GameSessionName);
+			FNamedOnlineSession* Session = Sessions->GetNamedSession(NAME_GameSession);
 			if (Session &&
 				Session->SessionState == EOnlineSessionState::InProgress)
 			{
 				DelegateHandle = Sessions->AddOnEndSessionCompleteDelegate_Handle(Delegate);
-				Sessions->EndSession(GameSessionName);
+				Sessions->EndSession(NAME_GameSession);
 			}
 			else
 			{

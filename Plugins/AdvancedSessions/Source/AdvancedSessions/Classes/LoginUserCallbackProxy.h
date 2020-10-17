@@ -3,7 +3,7 @@
 
 #include "CoreMinimal.h"
 #include "BlueprintDataDefinitions.h"
-#include "OnlineIdentityInterface.h"
+#include "Interfaces/OnlineIdentityInterface.h"
 #include "Engine/LocalPlayer.h"
 #include "LoginUserCallbackProxy.generated.h"
 
@@ -20,7 +20,7 @@ class ULoginUserCallbackProxy : public UOnlineBlueprintCallProxyBase
 	UPROPERTY(BlueprintAssignable)
 	FEmptyOnlineDelegate OnFailure;
 
-	// Logs out of the identity interface
+	// Logs into the identity interface
 	UFUNCTION(BlueprintCallable, meta=(BlueprintInternalUseOnly = "true", WorldContext="WorldContextObject"), Category = "Online|AdvancedIdentity")
 	static ULoginUserCallbackProxy* LoginUser(UObject* WorldContextObject, class APlayerController* PlayerController, FString UserID, FString UserToken);
 
