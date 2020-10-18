@@ -6,14 +6,6 @@ anyone who wants to improve the project is well accepted. <br />
 https://trello.com/b/XSXJhT2e/fps-game
 
 ------
-# Download content separately (need to work)
-(StarterContent) <br />
-The repository lacks the "StarterContent" folder in the / Content / StarterContent path
-
-You should add this way to the editor: <br />
-Go to "Add new" in the content browser - "Add feature or content pack" - choose the starter content
-
-------
 
 # How to do some tests
 
