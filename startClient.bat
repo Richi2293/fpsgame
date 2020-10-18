@@ -1,1 +1,1 @@
-"C:\UnrealEngine-4.18.0-release\Engine\Binaries\Win64\ue4editor" %~dp0\FPSGame.uproject MainMenu -game -log
+"D:\UnrealEngine\Engine\Binaries\Win64\ue4editor" %~dp0\FPSGame.uproject MainMenu -game -log

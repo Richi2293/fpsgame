@@ -15,18 +15,6 @@ Go to "Add new" in the content browser - "Add feature or content pack" - choose 
 
 ------
 
-(ArbitraryStudio) <br />
-The repos also lacks a free template folder, downloadable here:<br />
-https://gumroad.com/l/uPXbQ <br />
-(to add in the "content" folder of the project)
-
-------
-
-(InfinityBladeEffects) <br />
-downloadable from the marketplace
-
-------
-
 # How to do some tests
 
 To do some tests use the .bat files: <br/>
